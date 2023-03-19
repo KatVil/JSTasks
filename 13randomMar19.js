@@ -4,14 +4,16 @@ let num = 25;
 let max = 100;
 const func1 = (num, max)=>{
   let arr = [];
-  for (let i = 0; i<=max; i++){
+  let min = 1;
+  for (let i=0; i<=max; i++){
     while ((arr.length <= num) && (i<=max)){
+        i = (Math.random() * (max - min) + min).toFixed(2);
+        // i = i.toFixed(2);
         arr.push(i);
         i++;
-    }        
-    let a = 1;
-    arr.sort( (max,a) => max - a );  
-  }  
-  return arr;
+    } 
+    arr.sort( (max, min) => max - min );  
+    return arr;
+  }
 }
 console.log(func1(num,max));
