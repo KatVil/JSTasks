@@ -9,3 +9,13 @@ const pow = (x, n)=>{
     return res;
   }
   console.log(pow1(2,3));
+
+
+  // (3, 2) → 3 * 3 = 9, (3, 3) → 3 * 3 * 3 = 27
+const pow0 = (x, n) =>{
+  let res = 1;
+  for(let i=1; i<=n; i++){
+    res = res*x;
+  }
+  return res;
+} 
