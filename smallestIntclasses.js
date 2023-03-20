@@ -1,3 +1,11 @@
+
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      return Math.min(...args);
+    }
+  }
+
+//OR
 class SmallestIntegerFinder {
     findSmallestInt(args) {
     let temp ;
